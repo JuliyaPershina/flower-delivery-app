@@ -1,5 +1,6 @@
 'use client';
 import { useCart } from '../context/CartContext';
+import Image from 'next/image';
 
 interface Flower {
   _id: string;
@@ -18,10 +19,17 @@ export default function FlowerCard({ flower }: { flower: Flower }) {
 
   return (
     <div className="border rounded-lg shadow-md p-4 flex flex-col justify-between items-center">
-      <img
+      {/* <img
         src={flower.image}
         alt={flower.name}
         className="w-40 h-40 object-cover rounded-md mb-3"
+      /> */}
+      <Image
+        src={flower.image}
+        alt={flower.name}
+        fill
+        className="object-cover rounded-md"
+        sizes="160px"
       />
       <h3 className="text-lg font-bold">{flower.name}</h3>
       <p className="text-gray-600 text-center text-sm">{flower.description}</p>
