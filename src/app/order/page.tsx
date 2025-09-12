@@ -2,9 +2,17 @@
 
 import { useState, useEffect } from 'react';
 
+interface CartItem {
+  _id: string;
+  name: string;
+  price: number;
+  quantity: number;
+  image?: string;
+}
+
 
 export default function OrderPage() {
-  const [cart, setCart] = useState<any[]>([]);
+  const [cart, setCart] = useState<CartItem[]>([]);
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
