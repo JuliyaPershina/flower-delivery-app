@@ -1,86 +1,36 @@
-# 🌸 Flower Delivery App
+# Flower Delivery App 🌸
 
-Веб-застосунок для замовлення квітів онлайн. Користувач може обрати квіти з магазину, додати їх у кошик, змінювати кількість товарів, видаляти та оформлювати замовлення із введенням даних доставки. Замовлення зберігаються у базі даних MongoDB.
+**Level:** Base  
 
----
+This project is a basic online flower shop with a cart, ordering system, and shop pages.
 
-## 🚀 Функціонал
+## Technologies & Resources
+- **Frontend:** Next.js 13 (App Router), React, TypeScript
+- **Styling:** Tailwind CSS
+- **State Management:** Context API for the cart
+- **Database:** MongoDB Atlas
+- **API:** Next.js API Routes
+- **Icons:** react-icons
+- **Images:** local images in the `public/images` folder
 
-- **Flower Shops page ("/")**
-  - Вивід списку квітів із бази даних
-  - Додавання квітів у кошик
-- **Shopping Cart page ("/cart")**
-  - Перегляд вибраних товарів
-  - Зміна кількості
-  - Видалення товарів
-  - Обрахунок загальної вартості
-- **Order Details page ("/order")**
-  - Введення email, телефону та адреси
-  - Відправка замовлення у базу даних
-  - Вивід повідомлення про успішне оформлення
+## Features
+- Browse a list of shops and their flowers
+- Add products to the cart
+- Form validation for orders
+- Submit orders to the server (MongoDB)
+- Calculate the total cart amount
 
----
+## Screenshot
 
-## 🛠️ Використані технології
+![Shop Screenshot](./public/images/shop-screenshot.png)
 
-### Front-End
 
-- **Next.js 13+ (App Router)**
-- **TypeScript**
-- **React Hooks**
-- **TailwindCSS** для стилізації
-
-### Back-End
-
-- **Node.js + Express**
-- **Next.js API Routes**
-- **MongoDB + Mongoose**
-
----
-
-## 📂 Структура проєкту
-
-flower-delivery-app/
-├─ lib/ # підключення до MongoDB
-├─ models/ # Mongoose-моделі (Flower, Order)
-├─ pages/api/ # API-ендпоїнти для квітів та замовлень
-├─ server/ # Express-сервер
-├─ src/app/ # фронтенд (Next.js App Router)
-│ ├─ components/ # UI-компоненти (Navbar, FlowerCard, CartItem)
-│ ├─ page.tsx # сторінка з квітами (shops)
-│ ├─ cart/page.tsx # кошик
-│ ├─ order/page.tsx # оформлення замовлення
-
----
-
-## ✅ Рівень виконання
-
-- [x] Сторінка Flower Shops (вивід з бази даних, додавання у кошик)
-- [x] Сторінка Shopping Cart (перегляд, зміна кількості, видалення)
-- [x] Сторінка Order Details (форма + збереження у базу)
-- [x] API для квітів (`/api/flowers`)
-- [x] API для замовлень (`/api/orders`)
-- [x] Підключення до MongoDB через Mongoose
-- [ ] Додатковий дизайн/анімації (можна покращити)
-
----
-
-## ⚙️ Запуск проєкту локально
-
-1. Клонувати репозиторій:
-   ```bash
-   git clone https://github.com/your-username/flower-delivery-app.git
-   cd flower-delivery-app
-   ```
-
-🌍 Деплой
 
 GitHub Repo: Flower Delivery App
 
 Live Demo: https://flower-delivery.vercel.app
 
-(⚠️ заміни your-username та URL на свої реальні дані після публікації)
 
-👩‍💻 Автор
+👩‍💻 Author: Juliia Pershina.
 
-Розроблено як тестове завдання для демонстрації Fullstack (Next.js + Express + MongoDB) застосунку.
+Developed as a test project to demonstrate a Fullstack (Next.js + Express + MongoDB) application.
