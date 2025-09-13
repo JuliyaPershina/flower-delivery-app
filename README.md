@@ -1,6 +1,6 @@
 # Flower Delivery App 🌸
 
-**Level:** Base  
+**Level:** Base (Failed to deploy on Vercel.)
 
 This project is a basic online flower shop with a cart, ordering system, and shop pages.
 
@@ -28,7 +28,6 @@ This project is a basic online flower shop with a cart, ordering system, and sho
 
 GitHub Repo: Flower Delivery App
 
-Live Demo: https://flower-delivery.vercel.app
 
 
 👩‍💻 Author: Juliia Pershina.
